@@ -17,12 +17,12 @@ theme: # leave it empty
 
 # social
 author: Wangbo Zheng
-
-social_links:
- github: WangboZ
+github: WangboZ
 #image: /thumbnail-jumbo.png
- twitter: wbzheng1
- linkedin: wangbozheng
+twitter: 
+  username: wbzheng1
+linkedin: 
+  username: wangbozheng
 
 plugins:
   - jekyll-target-blank
