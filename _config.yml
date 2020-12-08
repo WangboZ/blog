@@ -1,5 +1,5 @@
-title: Test Blog Theme
-description: Test Test.
+title: Wangbo Zheng Blog
+description: A travel notes of the data world.
 show_downloads: true
 
 baseurl: "/cayman-blog" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
@@ -16,10 +16,10 @@ cayman-blog:
 theme: # leave it empty
 
 # social
-author: lorepirri
+author: Wangbo Zheng
 image: /thumbnail-jumbo.png
 twitter:
-  username: lorepirri
+  username: wbzheng1
 
 plugins:
   - jekyll-target-blank
