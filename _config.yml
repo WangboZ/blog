@@ -26,6 +26,7 @@ linkedin:
 
 plugins:
   - jekyll-target-blank
+  - jekyll-seo-tag
 
 target-blank:
     rel: nofollow
