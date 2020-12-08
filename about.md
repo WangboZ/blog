@@ -1,15 +1,14 @@
 ---
 layout: page
 title: About
-tagline: A few more words about this theme
+tagline: A travel notes of the data world.
 permalink: /about.html
 ref: about
 order: 0
 ---
 
-This is the _Cayman Blog_ Jekyll theme. You can find out more info about customizing this theme, as well as basic usage documentation, and source code at: [cayman-blog](https://github.com/lorepirri/cayman-blog)
+This is a blog or learning note of Wangbo Zheng. You can find topics about machine learning, data science, and some trivia.
 
-You can find the source code for _Jekyll_ at [jekyll](https://github.com/jekyll/jekyll)
 
 
 [Go to the Home Page]({{ '/' | absolute_url }})
