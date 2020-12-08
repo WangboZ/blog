@@ -21,8 +21,15 @@ github: WangboZ
 #image: /thumbnail-jumbo.png
 twitter: 
   username: wbzheng1
-linkedin: 
-  username: wangbozheng
+#linkedin: 
+#  username: wangbozheng
+  
+social:
+  links:
+   - https://twitter.com/wbzheng1
+   - https://www.linkedin.com/in/wangbozheng
+   - https://github.com/WangboZ
+
 
 plugins:
   - jekyll-target-blank
