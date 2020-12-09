@@ -24,11 +24,11 @@ twitter:
 #linkedin: 
 #  username: wangbozheng
   
-social:
-  links:
-   - https://twitter.com/wbzheng1
-   - https://www.linkedin.com/in/wangbozheng
-   - https://github.com/WangboZ
+#social:
+#  links:
+#   - https://twitter.com/wbzheng1
+#   - https://www.linkedin.com/in/wangbozheng
+#   - https://github.com/WangboZ
 
 
 plugins:
@@ -38,4 +38,4 @@ plugins:
 target-blank:
     rel: nofollow
 
-header_page_refs: ['archive', 'about', 'contact']
+header_page_refs: ['archive', 'about']
