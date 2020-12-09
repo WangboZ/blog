@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: home
 title: Archive
 tagline: All posts
-permalink: /now.html
+permalink: /archive.html
 ref: archive
 order: 2
 ---
