@@ -1,5 +1,5 @@
 ---
-layout: archive_layout
+layout: archivelayout
 title: Archive
 tagline: All posts
 permalink: /archive.html
