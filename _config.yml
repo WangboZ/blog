@@ -33,7 +33,7 @@ twitter:
 
 plugins:
   - jekyll-target-blank
-#  - jekyll-seo-tag
+  - jekyll-seo-tag
 
 target-blank:
     rel: nofollow
