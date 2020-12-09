@@ -16,8 +16,8 @@ cayman-blog:
 theme: # leave it empty
 
 # social
-author: Wangbo Zheng
-github: WangboZ
+author: WangboZ
+#github: WangboZ
 #image: /thumbnail-jumbo.png
 twitter: 
   username: wbzheng1
