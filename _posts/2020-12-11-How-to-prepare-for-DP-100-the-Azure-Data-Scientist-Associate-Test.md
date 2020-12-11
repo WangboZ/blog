@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "How to prepare for DP-100 the Azure Data Scientist Associate Test"
-tagline: "This post demonstrates post content styles"
+tagline: 
 author: "Wangbo Zheng"
 ---
 
 An Azure Data Scientist Associate Badge looks cool. If you also want to get yours, you need to pass the DP-100 exam: Designing and Implementing a Data Science Solution on Azure. In this article, I will tell you what the content of the DP-100 exam is, how did I prepare for it. I hope after you finish reading this article, it will help you to pass the DP-100 exam.
 
-![badge](https://github.com/WangboZ/blog/blob/master/image/azure-data-scientist-associate-600x600.png)
+![badge](https://raw.githubusercontent.com/WangboZ/blog/master/image/azure-data-scientist-associate-600x600.png){: width=150}
 
 I took the exam end of August. According to the official exam website, this exam was updated on December 8. The exam skills outline does not change so much. Some terminology is modified slightly, which happens all the time in Azure. 
 
@@ -55,7 +55,7 @@ Of course, you will gain all the skills needed to become certified, if you have 
 
 The most helpful resources come from [Microsoft Learn](https://docs.microsoft.com/en-us/learn/). You will get all the free courses you needed by selecting data scientist as your role. The following learning paths almost all exam requirements. 
 
-![MicrosoftLearn](https://github.com/WangboZ/blog/blob/master/image/microsoft-learn.png)
+![MicrosoftLearn](https://raw.githubusercontent.com/WangboZ/blog/master/image/microsoft-learn.png)
 
 There are always exercises in each Microsoft Learn course. For the drag and drop style **Azure Machine Learning designer** you can get step by step guide with pictures. There are also code snippets with explanations for the **Python SDK**. You can find the corresponding notebooks in this [Github repository]([GitHub - MicrosoftLearning/mslearn-dp100: Lab files for Azure Machine Learning exercises](https://github.com/MicrosoftLearning/mslearn-dp100)).Make sure that you go through all the courses with the hands-on lab at least once. Because there will be many detailed questions in the exam. Sometimes you need to fill a blank of code (with option) or find the suitable module. 
 
