@@ -6,9 +6,9 @@ author: "Wangbo Zheng"
 ---
 
 An Azure Data Scientist Associate Badge looks cool. If you also want to get yours, you need to pass the DP-100 exam: Designing and Implementing a Data Science Solution on Azure. In this article, I will tell you what the content of the DP-100 exam is, how did I prepare for it. I hope after you finish reading this article, it will help you to pass the DP-100 exam.
-
+<p align="center">
 <img src="https://raw.githubusercontent.com/WangboZ/blog/master/image/azure-data-scientist-associate-600x600.png" width="250" height="250" div align=center/>
-
+</p>
 I took the exam end of August. According to the official exam website, this exam was updated on December 8. The exam skills outline does not change so much. Some terminology is modified slightly, which happens all the time in Azure. 
 
 
