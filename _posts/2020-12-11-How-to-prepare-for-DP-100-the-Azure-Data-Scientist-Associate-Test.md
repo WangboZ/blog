@@ -76,6 +76,6 @@ After you prepared/passed the DP-100 exam, you will have a clear view of the who
 
 
 ```
-> Upon earning a certification, 23% of Microsoft certified technologists reported receiving up to a 20% salary increase. What’s more, certified employees are often entrusted with supervising their peers—putting them on the fast track for a promotion. —2017 Pearson VUE Value of Certification white paper.
+>> Upon earning a certification, 23% of Microsoft certified technologists reported receiving up to a 20% salary increase. What’s more, certified employees are often entrusted with supervising their peers—putting them on the fast track for a promotion. —2017 Pearson VUE Value of Certification white paper.
 ```
 
