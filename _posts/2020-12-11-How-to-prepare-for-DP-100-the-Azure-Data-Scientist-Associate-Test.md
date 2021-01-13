@@ -45,7 +45,7 @@ I learned from my colleagues that this exam used to contain many questions about
 
 ## How to prepare for it?
 
-I work as a data scientist for more than two years. Benefit from the partnership between our company and Microsoft, I have already gained many experiences with Azure, especially Azure Machine Learning related services. As mentioned before, not only data science basic knowledge is necessary for the exam, but machine learning related Azure skills are also more important. It's not a problem if you don't have an Azure account yet. You can create your [Azure free account ]((https://azure.microsoft.com/en-us/free/)) with 170€/200$ credits for 30 days. It is enough for you to practice with the Azure Machine Learning service even also other Azure products. 
+I work as a data scientist for more than two years. Benefit from the partnership between our company and Microsoft, I have already gained many experiences with Azure, especially Azure Machine Learning related services. As mentioned before, not only data science basic knowledge is necessary for the exam, but machine learning related Azure skills are also more important. It's not a problem if you don't have an Azure account yet. You can create your [Azure free account ](https://azure.microsoft.com/en-us/free/) with 170€/200$ credits for 30 days. It is enough for you to practice with the Azure Machine Learning service even also other Azure products. 
 
 
 
