@@ -44,6 +44,31 @@ Unlike other labeling tools, MNE can only process medical data like MEG. The inp
 For each labeling project with Label Studio, it requires a **configuration file**. There are many templates available, but some basic **XML** knowledge is still needed to adjust the config file with your data. The name and number of labels are also **fixed** in the config file, which means new labels can not be added during user labeling the data in UI. 
 
 
+## Conclusion
 
+The following table is a summary of the above three tools. They provide various features and functions. All three tools are recommended based on my experience. Of course, there are some other tools such as [Grafana Labs](https://grafana.com/docs/grafana/latest/dashboards/annotations/), etc. You can decide on one of them or even combine them according to your different project requirements. Hope this article can help you find the right labeling tool. 
+
+|                     | TRAINSET                    | MNE                          | Label Studio     |
+| ------------------- | --------------------------- | ---------------------------- | ---------------- |
+| Data type           | All time series             | Only neurophysiological data | All time series  |
+| Input format        | CSV                         | MNE format                   | CSV, JSON, URL   |
+| Install             | npm/ or web without install | pip                          | pip, git, docker |
+| Programming require | No                          | Python                       | XML              |
+| Zoom, overview      | Yes                         | Yes                          | Yes              |
+| Add new label       | Yes                         | Yes, but not in UI           | Yes              |
+| Multi-channel       | Yes                         | Yes                          | Yes              |
+| Multi-label         | No                          | Yes                          | Yes              |
+
+### References
+
+1. [Geocene/trainset: A very lightweight web application for brushing labels onto time series data; useful for building training sets. (github.com)](https://github.com/Geocene/trainset)
+
+2. [Annotating continuous data — MNE 0.23.dev0 documentation](https://mne.tools/dev/auto_tutorials/raw/plot_30_annotate_raw.html#sphx-glr-auto-tutorials-raw-plot-30-annotate-raw-py)
+
+3. [Label Studio — Data Labeling](https://labelstud.io/blog/release-080-time-series-labeling.html)
+
+4. [machine learning - Interactive labeling/annotating of time series data - Data Science Stack Exchange](https://datascience.stackexchange.com/questions/38080/interactive-labeling-annotating-of-time-series-data)
+
+   
 
 
