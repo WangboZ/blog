@@ -91,7 +91,7 @@ service principal authentication, token authentication. You can find more detail
 
 1. [MachineLearningNotebooks/authentication-in-azureml.ipynb at master · Azure/MachineLearningNotebooks · GitHub](https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/manage-azureml-service/authentication-in-azureml/authentication-in-azureml.ipynb)
 
-2. [Sign in with the Azure CLI | Microsoft Docs](https://docs.microsoft.com/de-de/cli/azure/authenticate-azure-cli)
+2. [Sign in with the Azure CLI](https://docs.microsoft.com/de-de/cli/azure/authenticate-azure-cli)
 
 3. [What is the antonym for "default"? - English Language Learners Stack Exchange](https://ell.stackexchange.com/questions/22051/what-is-the-antonym-for-default)
 
