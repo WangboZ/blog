@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Convert Image between OpenCV, PIL, and Bytes"
+title: "How to Authenticate to Azure Machine Learning Workspace in a Defined Tenant"
 tagline: 
 author: "Wangbo Zheng"
 ---
