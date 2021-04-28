@@ -6,7 +6,7 @@ tagline:
 author: "Wangbo Zheng"
 ---
 
-If you want to develop an image classification algorithm with your collected images. You may have several problems: how can I create labels for the images; how can I ensure that all the images have the same size to fit the algorithm; what should I do if I have not enough images. Don't worry; there is a pair of methods in TensorFlow and Keras can help you solve them easily. After reading this article you will know how to: label the images just with the right folder name; apply data augmentation on the fly; split train and validation.
+If you want to develop an image classification algorithm with your collected images, you may have several questions: how can I create labels for the images; how can I ensure that all the images have the same size to fit the algorithm; what should I do if I have not enough images. Don't worry; there is a pair of methods in TensorFlow and Keras can help you solve them easily. After reading this article you will know how to: label the images just with the right folder name; apply data augmentation on the fly; split train and validation.
 
 Before we go through the code, make sure you have the following libs installed:
 
