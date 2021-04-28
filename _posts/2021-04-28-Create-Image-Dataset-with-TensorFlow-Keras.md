@@ -79,10 +79,10 @@ batch_size = 9
 img_height = 180
 img_width = 180
 train_ds = tf.keras.preprocessing.image_dataset_from_directory(
-  data_dir,
-  seed=123,
-  image_size=(img_height, img_width),
-  batch_size=batch_size)
+    data_dir,
+    seed=123,
+    image_size=(img_height, img_width),
+    batch_size=batch_size)
 ```
 
 The class names will be the subfolder names. You can find the class names in the class_names attribute on these datasets. Your output will be: ```['apple', 'banana', 'orange']```
@@ -146,17 +146,17 @@ Notice that our labels  are not encoded, so we will use ```sparse_categorical_cr
 
 ```python
 model.compile(
-  optimizer='adam',
-  loss = "sparse_categorical_crossentropy",
-  metrics=['accuracy'])
+    optimizer='adam',
+    loss = "sparse_categorical_crossentropy",
+    metrics=['accuracy'])
 ```
 
 Now your model is ready to train!
 
 ```python
 model.fit(
-  train_ds,
-  epochs=10
+    train_ds,
+    epochs=10
 )
 ```
 
@@ -168,25 +168,25 @@ Data augmentation is a very important technology to improve the generalizability
 
 ```python
 train_datagen = ImageDataGenerator(
-      #rescale=1/255,
-      rotation_range=40,
-      width_shift_range=0.2,
-      height_shift_range=0.2,
-      shear_range=0.2,
-      zoom_range=0.2,
-      horizontal_flip=True,
-      fill_mode='nearest')
+    #rescale=1/255,
+    rotation_range=40,
+    width_shift_range=0.2,
+    height_shift_range=0.2,
+    shear_range=0.2,
+    zoom_range=0.2,
+    horizontal_flip=True,
+    fill_mode='nearest')
 ```
 
 After setting the parameter of data augmentation, we use ```flow_from_directory``` to connect with our image folder. It is very similar to ```image_dataset_from_directory``` function. However, we need to set the ```class_mode``` to ```'categorical'```. The output will be: ```Found 45 images belonging to 3 classes.```
 
 ```python
 train_generator = train_datagen.flow_from_directory(
-        data_dir,  # This is the source directory for training images
-        target_size=(img_height, img_width), 
-        seed=123,
-        batch_size=batch_size,
-        class_mode='categorical')
+    data_dir,  # This is the source directory for training images
+    target_size=(img_height, img_width), 
+    seed=123,
+    batch_size=batch_size,
+    class_mode='categorical')
 ```
 
 Let's check the shapes of our input images and labels. The image batch will have a shape: ```(9, 180, 180, 3)```. However, the shape of the labels is ```(9, 3)```, it is one-hot encoded!
@@ -218,43 +218,42 @@ Now, let's do the data augmentation with normalization to fit the neural network
 
 ```python
 train_datagen = ImageDataGenerator(
-      rescale=1/255,
-      rotation_range=40,
-      width_shift_range=0.2,
-      height_shift_range=0.2,
-      shear_range=0.2,
-      zoom_range=0.2,
-      horizontal_flip=True,
-      fill_mode='nearest')
+    rescale=1/255,
+    rotation_range=40,
+    width_shift_range=0.2,
+    height_shift_range=0.2,
+    shear_range=0.2,
+    zoom_range=0.2,
+    horizontal_flip=True,
+    fill_mode='nearest')
 train_generator = train_datagen.flow_from_directory(
-        data_dir,  
-        target_size=(img_height, img_width), 
-        seed=123,
-        batch_size=batch_size,
-        class_mode='categorical')
+    data_dir,  
+    target_size=(img_height, img_width), 
+    seed=123,
+    batch_size=batch_size,
+    class_mode='categorical')
 
 num_classes = 3
 model = tf.keras.Sequential([
-  layers.Conv2D(32, 3, activation='relu'),
-  layers.MaxPooling2D(),
-  layers.Flatten(),
-  layers.Dense(128, activation='relu'),
-  layers.Dense(num_classes),
-  layers.Activation('softmax')
-])
+    layers.Conv2D(32, 3, activation='relu'),
+    layers.MaxPooling2D(),
+    layers.Flatten(),
+    layers.Dense(128, activation='relu'),
+    layers.Dense(num_classes),
+    layers.Activation('softmax')])
 ```
 
 Here we can use ```categorical_crossentropy``` as the loss function. To use a generator as input we need to set the ```steps_per_epoch``` parameter. We have 45 images and the size of our batch is 9, so here we set the number of steps 5. 
 
 ```python
 model.compile(
-  optimizer='adam',
-  loss='categorical_crossentropy',
-  metrics=['accuracy'])
+    optimizer='adam',
+    loss='categorical_crossentropy',
+    metrics=['accuracy'])
 model.fit(
-      train_generator,
-      steps_per_epoch=5,  
-      epochs=10)
+    train_generator,
+    steps_per_epoch=5,  
+    epochs=10)
 ```
 
 
@@ -296,20 +295,20 @@ It  can also be easily done with a small change of our code. What we need to set
 
 ```python
 train_ds = tf.keras.preprocessing.image_dataset_from_directory(
-	data_dir,
-  	seed=123,
-  	image_size=(img_height, img_width),
-  	batch_size=batch_size,
-  	validation_split=0.2,
-  	subset='training')
+    data_dir,
+    seed=123,
+    image_size=(img_height, img_width),
+    batch_size=batch_size,
+    validation_split=0.2,
+    subset='training')
 
 valid_ds = tf.keras.preprocessing.image_dataset_from_directory(
-  	data_dir,
-  	seed=123,
-  	image_size=(img_height, img_width),
-  	batch_size=batch_size,
-  	validation_split=0.2,
-  	subset='validation')
+    data_dir,
+    seed=123,
+    image_size=(img_height, img_width),
+    batch_size=batch_size,
+    validation_split=0.2,
+    subset='validation')
 ```
 
 It is similar to```ImageDataGenerator```. But the data augmentation setting can also be defined differently. Some people want to remove all data augmentation for the validation set to keep the validation data real. 
@@ -349,7 +348,7 @@ We can use the same CNN model as above, it can now be trained as follow.
 
 ```python
 model.fit(
-	train_generator,
+    train_generator,
     steps_per_epoch=4,  
     validation_data=val_generator,
     validation_steps=1,
@@ -362,13 +361,13 @@ Hope this article can help you to create image datasets with TensorFlow and Kera
 
 ### References
 
-1. [tf.data.Dataset  | TensorFlow Core v2.4.1](https://www.tensorflow.org/api_docs/python/tf/data/Dataset)
+1. [tf.data.Dataset TensorFlow Core v2.4.1](https://www.tensorflow.org/api_docs/python/tf/data/Dataset)
 
-2. [Load images  | TensorFlow Core](https://www.tensorflow.org/tutorials/load_data/images)
+2. [Load images TensorFlow Core](https://www.tensorflow.org/tutorials/load_data/images)
 
 3. [Image data preprocessing (keras.io)](https://keras.io/api/preprocessing/image/) 
 
-4. [Tutorial on using Keras flow_from_directory and generators | by Vijayabhaskar J | Medium](https://vijayabhaskar96.medium.com/tutorial-image-classification-with-keras-flow-from-directory-and-generators-95f75ebe5720) 
+4. [Tutorial on using Keras flow_from_directory and generators by Vijayabhaskar J Medium](https://vijayabhaskar96.medium.com/tutorial-image-classification-with-keras-flow-from-directory-and-generators-95f75ebe5720) 
 
    
 
