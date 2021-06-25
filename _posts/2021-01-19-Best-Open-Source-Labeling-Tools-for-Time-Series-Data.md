@@ -26,7 +26,7 @@ TRAINSET can also handle multi-channel data. However, there are some limitations
 [MNE](https://mne.tools/dev/index.html) is an open-source Python package for exploring, visualizing, and analyzing neurophysiological data: MEG, EEG, and more. MNE also provides a method to annotate this **medical signal data**. Because of the character of these signals, MNE can easily assign labels for **multi-channel**. It also supports **multi-label**. Labels can be added programmatically, and you can even pass lists or arrays to the [annotations](https://mne.tools/dev/generated/mne.Annotations.html#mne.Annotations) constructor to label multiple spans at once. In MNE, labels or annotations are list-like objects, where each element comprises three pieces of information: an onset time, a duration, and a description. Annotations can also be created interactively by clicking-and-dragging the mouse in the plot window. You can also **add new labels** in the plot window. 
 
 <p align="center">
-<img src="https://mne.tools/dev/_images/sphx_glr_plot_30_annotate_raw_003.png">
+<img src="https://mne.tools/dev/_images/sphx_glr_30_annotate_raw_001.png">
 </p>
 
 Unlike other labeling tools, MNE can only process medical data like MEG. The input should be also adjusted with the right format. It also requires some Python knowledge to get started. 
